@@ -456,6 +456,7 @@ static void lcd_return_to_status() {
     card.closefile();
     autotempShutdown();
     cancel_heatup = true;
+    fanSpeed=0;
     lcd_setstatus(MSG_PRINT_ABORTED, true);
   }
 
