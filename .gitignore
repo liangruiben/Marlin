@@ -18,3 +18,6 @@ applet/
 *.s
 *.i
 *.ii
+*.suo
+*.sln
+*.filters
