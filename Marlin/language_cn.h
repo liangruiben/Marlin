@@ -40,7 +40,7 @@
 #define MSG_AUTOSTART                       "\xb1\xb2\xb3\xb4"
 #define MSG_DISABLE_STEPPERS                "\xb5\xb6\xb7\xb8\xb9\xba"
 #define MSG_AUTO_HOME                       "\xbb\xbc\xbd"
-#define MSG_LEVEL_BED_HOMING                "Homing XYZ"  //XYZ归零
+#define MSG_LEVEL_BED_HOMING                "Homing XYZ"  //XYZ回原点
 #define MSG_LEVEL_BED_WAITING               "Click to Begin"  //点击开始
 #define MSG_LEVEL_BED_DONE                  "Leveling Done!"  //完成调平
 #define MSG_LEVEL_BED_CANCEL                "Cancel"  //取消
@@ -113,8 +113,8 @@
 #define MSG_CONTRAST                        "LCD contrast"  //LCD对比度
 #define MSG_STORE_EPROM                     "Store memory"  //保存设置
 #define MSG_LOAD_EPROM                      "Load memory"   //加载设置
-#define MSG_RESTORE_FAILSAFE                "Restore failsafe"  //恢复默认
-#define MSG_REFRESH                         "Refresh"   //刷新
+#define MSG_RESTORE_FAILSAFE                "Restore failsafe"  //恢复出厂
+#define MSG_REFRESH                         "Refresh"   //更新
 #define MSG_WATCH                           "\xec\xed\xee\xef"
 #define MSG_PREPARE                         "\xa4\xa5"
 #define MSG_TUNE                            "\xcf\xf0"
@@ -126,7 +126,7 @@
 #define MSG_DWELL                           "Sleep..."   //延时
 #define MSG_USERWAIT                        "Wait for user..."  //等待用户
 #define MSG_RESUMING                        "Resuming print"  //恢复打印
-#define MSG_PRINT_ABORTED                   "Print aborted" //中断打印
+#define MSG_PRINT_ABORTED                   "Print aborted" //中止打印
 #define MSG_NO_MOVE                         "No move."  //没有移动
 #define MSG_KILLED                          "KILLED. "  //死亡
 #define MSG_STOPPED                         "STOPPED. "  //停止
@@ -142,7 +142,7 @@
 #define MSG_INIT_SDCARD                     "Init. SD card"  //初始化SD卡
 #define MSG_CNG_SDCARD                      "Change SD card"  //SD卡改变
 #define MSG_ZPROBE_OUT                      "Z probe out. bed" //Z探针超出热床 
-#define MSG_YX_UNHOMED                      "Home X/Y before Z" //在Z前XY回零
+#define MSG_YX_UNHOMED                      "Home X/Y before Z" //Z前XY回零
 #define MSG_ZPROBE_ZOFFSET                  "Z Offset"  //Z编移
 #define MSG_BABYSTEP_X                      "Babystep X" 
 #define MSG_BABYSTEP_Y                      "Babystep Y"
@@ -151,9 +151,9 @@
 #define MSG_HEATING_FAILED_LCD              "Heating failed"//加热失败
 #define MSG_ERR_REDUNDANT_TEMP              "Err: REDUNDANT TEMP"  //Err:温度过热
 #define MSG_THERMAL_RUNAWAY                 "THERMAL RUNAWAY" //加热失控
-#define MSG_ERR_MAXTEMP                     "Err: MAXTEMP"  //Err:温度超限
-#define MSG_ERR_MINTEMP                     "Err: MINTEMP"  //Err:温度太低
-#define MSG_ERR_MAXTEMP_BED                 "Err: MAXTEMP BED" //Err:热床超温
+#define MSG_ERR_MAXTEMP                     "Err: MAXTEMP"  //Err:温度超热
+#define MSG_ERR_MINTEMP                     "Err: MINTEMP"  //Err:温度超低
+#define MSG_ERR_MAXTEMP_BED                 "Err: MAXTEMP BED" //Err:热床超热
 #define MSG_END_HOUR                        "hours" //小时
 #define MSG_END_MINUTE                      "minutes"  //分钟
 
